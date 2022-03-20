@@ -1,28 +1,31 @@
 {
   "name": "learning-node",
   "version": "1.0.0",
-  "description": "Learning the ins and out of node.js",
-  "main": "index.js",
+  "description": "Learning Node in conjustion with rect",
+  "main": "server.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/naziiriah/Learning-Node.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Nazir",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/naziiriah/Learning-Node/issues"
   },
   "homepage": "https://github.com/naziiriah/Learning-Node#readme",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.2",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.4.0"
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
